@@ -312,7 +312,7 @@ cp .env.template .env
 
 | Variable | Description | Default |
 |---|---|---|
-| `LLM_PROVIDER` | `fake`, `openai`, or `azure` | `fake` |
+| `LLM_PROVIDER` | `fake`, `openai`, or `azure` | `azure` |
 | `MONGO_URI` | MongoDB connection string | `mongodb://localhost:27017` |
 | `MONGO_DATABASE` | Database name | `engineering_service_desk` |
 | `DUPLICATE_SECRET` | Secret for HMAC hashing — change this in production | — |
@@ -352,7 +352,7 @@ Expected output:
 
 ## LLM Providers
 
-### fake (default — no API key needed)
+### fake (no API key needed)
 
 Uses regex-based extraction. Good for local development and all tests.
 
